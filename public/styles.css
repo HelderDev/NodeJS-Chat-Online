@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
 html, body {
     height: 100%;
+    background: #D9DCEC;
   }
   
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  *:focus {
+    outline-style: none;
   }
   
   #chat {
@@ -22,24 +30,36 @@ html, body {
     height: 50px;
     padding: 0 20px;
     font-size: 14px;
+    font-weight: lighter;
+    border-radius: 8px;
   }
   
   button {
     width: 600px;
     height: 50px;
-    font-size: 14px;
+    font-size: 16px;
     background: #069;
     text-align: center;
     line-height: 50px;
     font-weight: bold;
     color: #FFF;
     margin-top: 10px;
-  }
+    border: 0;
+    border-radius: 5px;
+    transition: opacity 0.2s;
+ }
   
+  button:hover {
+    opacity: 0.8;
+  }
+
   .messages {
     width: 600px;
     height: 400px;
     margin: 20px 0;
     border: 1px solid #ddd;
     padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    font-size: 15px;
   }
